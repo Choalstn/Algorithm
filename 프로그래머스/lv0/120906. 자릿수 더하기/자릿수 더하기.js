@@ -1,6 +1,5 @@
 function solution(n) {
-    return JSON.stringify(n)
+     return JSON.stringify(n)
     .split('')
-    .map((el) => parseInt(el))
-    .reduce((acc, curr) => acc + curr);
+    .reduce((acc, curr) => acc + Number(curr), 0);
 }
