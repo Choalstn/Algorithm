@@ -4,5 +4,5 @@ function solution(n, t) {
     // t시간 후 세균의 수 
     // 처음 2마리, 10시간 후는 2048 마리 = 2의 11승
     // 7 14 28 
-    return Array(t).fill(n).reduce((acc, curr) => acc * 2, n);
+    return n * 2**(t)
 }
