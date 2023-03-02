@@ -8,10 +8,6 @@ function solution(sides) {
     
     // b - a < c < a + b
     
-    let a = Math.min(...sides);
-    
-    let b = Math.max(...sides);
-    
-    return (2*a)-1
+    return (2*(Math.min(...sides)))-1
     
 }
