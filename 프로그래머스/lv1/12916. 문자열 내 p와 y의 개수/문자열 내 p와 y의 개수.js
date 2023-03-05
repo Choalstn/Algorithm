@@ -1,14 +1,8 @@
 function solution(s) {
-  let countP = 0,
-    countY = 0;
+  let str = s.toUpperCase();
 
-  for (let i of s) {
-    if (i.toUpperCase() === 'Y') {
-      countY++;
-    } else if (i.toUpperCase() === 'P') {
-      countP++;
-    }
-  }
-
-  return countP === countY ? true : false;
+  return str.split('P').length === str.split('Y').length ? true : false;
 }
+
+let a = solution('pPoooyY');
+console.log(a);
