@@ -1,3 +1,3 @@
 function solution(a, b) {
-   return a <= b ? ((a+b)*(b-a+1))/2 : (a+b)*(a-b+1)/2
+   return ((a+b)*(Math.abs(b-a)+1))/2
 }
