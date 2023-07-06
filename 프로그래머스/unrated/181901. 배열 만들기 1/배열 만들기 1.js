@@ -1,10 +1,10 @@
 function solution(n, k) {
     const result = [];
     
-    for(let i=1; i<=n; i++) {
-        if(i % k === 0) {
+    for(let i=k; i<=n; i+=k) {
+
             result.push(i)
-        }
+  
     }
     
     return result
