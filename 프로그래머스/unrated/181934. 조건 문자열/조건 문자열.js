@@ -1,17 +1,9 @@
 function solution(ineq, eq, n, m) {
   let result;
   if (ineq === '<') {
-    if (eq === '=') {
-      result = n <= m;
-    } else {
-      result = n < m;
-    }
+    eq === '=' ? (result = n <= m) : (result = n < m);
   } else {
-    if (eq === '=') {
-      result = n >= m;
-    } else {
-      result = n > m;
-    }
+    eq === '=' ? (result = n >= m) : (result = n > m);
   }
 
   return result ? 1 : 0;
